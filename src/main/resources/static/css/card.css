@@ -1,0 +1,154 @@
+body {
+	background-color: #000;
+	color: white;
+	font-family: "Roboto", sans-serif;
+	box-sizing: border-box;
+}
+
+.card {
+	position: relative;
+	border-radius: 10px;
+	border: 1px solid #252525;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin: 20px;
+	padding: 20px;
+	width: 15em;
+	background-color: #151515;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+.card p {
+	align-items: start;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	min-width: 4em;
+}
+.card img {
+	width: 14em;
+	border-radius: 10px;
+	height: auto;
+	z-index: 2;
+}
+.card:hover {
+	background-color: #252525;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.card:hover .card-disk {
+	display: inline;
+	z-index: 1;
+}
+
+.card-info {
+	width: 100%;
+}
+
+.card-title {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.card-price {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #00ff00;
+	margin: 0px;
+}
+
+.card-bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+	flex-direction: row;
+}
+
+.card-album {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+}
+.card-album p {
+	margin: 0px;
+}
+.card-album p:nth-child(2) {
+	margin: 0px 10px 0px 10px;
+	min-width: 0.5em;
+}
+
+.card-disk {
+	display: none;
+	height: 12em;
+	width: auto;
+	position: absolute;
+	top: 1.2em;
+	right: 0;
+	transition: all 0.5s ease-in-out;
+}
+
+.enlace_comprar_listado_principal {
+	border: none;
+	background-color: #ffd814;
+	color: black;
+	padding: 10px;
+	border-radius: 5px;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 0.9em;
+}
+
+#search_form {
+	display: flex;
+	flex-direction: column;
+	margin: 2em 0px;
+}
+
+#nombre_buscador {
+	margin: 0 auto;
+	width: 80%;
+	padding: 1em 10px;
+	max-width: 1000px;
+	font-size: 1.3em;
+	border-radius: 5px;
+}
+
+details {
+	border: 1px solid #ccc;
+	padding: 1em;
+	border-radius: 5px;
+	width: 80%;
+	margin: 2em auto;
+	max-width: 1000px;
+}
+
+summary {
+	cursor: pointer;
+	font-weight: bold;
+}
+
+#filters-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 2em 0px 1em 0px;
+	gap: 2em;
+}
+
+#filters-price-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#filters-price-container input {
+	width: 100%;
+}
+
+#filters-price-container p {
+	margin: 0;
+}

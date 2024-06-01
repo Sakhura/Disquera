@@ -1,0 +1,29 @@
+<div id="details-main">
+	<div id="details-header">
+		<img src="mostrar_imagen?id={{id}}" alt="" />
+		<div>
+			<h1>{{nombre}}</h1>
+			<h2>{{artista}}</h2>
+		</div>
+	</div>
+	<div id="buffer"></div>
+	<div id="details-body">
+		<div>
+			<p>Año:</p>
+			<p>{{ano}}</p>
+		</div>
+		<div>
+			<p>Discográfica:</p>
+			<p>{{discografica}}</p>
+		</div>
+		<div>
+			<p>Genero:</p>
+			<p>{{genero}}</p>
+		</div>
+		<div>
+			<p>Precio:</p>
+			<p id="details-price">{{precio}} €</p>
+		</div>
+		<input type="button" class="details-comprar" id-producto="{{id}}" value="Añadir al carrito">
+	</div>
+</div>

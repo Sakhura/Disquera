@@ -1,0 +1,48 @@
+<div action="#" id="pasos_container">
+	<div>
+		<h2>REALIZAR PEDIDO - PASO 1</h2>
+		<h3>Introduce tus datos de envío:</h3>
+	</div>
+	<div class="pasos_holder">
+		<label for="nombre">Nombre</label>
+		<input
+			class="pasos_input"
+			type="text"
+			name="nombre"
+			id="campo_nombre"
+		/><br />
+		<span class="errorIndicator" id="errorNombre"></span>
+	</div>
+	<div class="pasos_holder">
+		<label for="direccion">Dirección</label>
+		<input
+			class="pasos_input"
+			type="text"
+			name="direccion"
+			id="campo_direccion"
+		/><br />
+		<span id="errorDireccion" class="errorIndicator"></span>
+	</div>
+	<div class="pasos_holder">
+		<label for="provincia">Provincia</label>
+		<select
+			class="pasos_input"
+			name="provincia"
+			id="campo_provincia"
+		></select>
+		<br />
+	</div>
+	<br />
+	<button class="pasos-button" id="aceptar_paso_1">Continuar</button>
+</div>
+
+<script>
+	// script que llena el select de las provincias con los valores del array de provincias
+	let select_provincias = document.getElementById("campo_provincia");
+	for (let i = 0; i < provincias.length; i++) {
+		let option = document.createElement("option");
+		option.value = provincias[i];
+		option.text = provincias[i];
+		select_provincias.appendChild(option);
+	}
+</script>

@@ -1,0 +1,49 @@
+<div style="display: flex;flex-direction: column; align-items: center; margin: 0px auto;">
+	<h2>Carrito de la compra</h2>
+	<div>
+	{{#.}}
+	<div class="shop" id="div-producto-{{disco_id}}">
+			<div class="shop-top">
+				<span class="shop-name">{{nombre}}</span>
+				<span>•</span>
+				<span class="shop-artist">{{artista}}</span>
+			</div>
+			<div class="shop-data">
+				<img src="mostrar_imagen?id={{disco_id}}" alt="albumCover" class="shop-img" />
+
+				<div>
+					<div class="shop-info">
+						<div class="shop-item">
+							<p class="shop-title">Año:</p>
+							<p>{{ano}}</p>
+						</div>
+						<div class="shop-item">
+							<p class="shop-title">Discográfica:</p>
+							<p>{{discografica}}</p>
+						</div>
+						<div class="shop-item">
+							<p class="shop-title">Precio:</p>
+							<p class="shop-price">{{precio_disco}}<span>€</span></p>
+						</div>
+					</div>
+					<div class="shop-data">
+						<p class="shop-title">Cantidad:</p>
+						<input type="number" value="{{cantidad}}" id-disco="{{disco_id}}" class="shop-amount" />
+						<img
+							id-disco="{{disco_id}}"
+							src="imgs/trashCan.png"
+							alt=""
+							class="shop-can"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	
+	{{/.}}
+	</div>
+	<div style="text-align: center; font-size: 1.5em;padding: 10px;">
+		<a href="#" id="realizar_pedido">Realizar pedido</a>
+	</div>
+</div>
