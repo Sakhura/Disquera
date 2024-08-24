@@ -1,3 +1,5 @@
+#se crea rama de desarrollo rama2 
+
 # Proyecto tienda online con Java usando Spring Boot 
 
 ## Tienda de discos de vinilo: __*Vinilo O's*__
